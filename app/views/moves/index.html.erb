@@ -1,0 +1,10 @@
+<h1> Hello moves </h1>
+
+<h1><%= params[:anatomy] %></h1>
+
+<% Move.where(anatomy: params[:anatomy]).each do |move| %>
+<p> <%= link_to move.title, move_path(move) %> </p>
+<% end %>
+
+
+

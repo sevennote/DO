@@ -3,5 +3,3 @@ class Move < ActiveRecord::Base
 end
 
 
-git remote add origin https://github.com/sevennote/DO.git
-git push -u origin master
